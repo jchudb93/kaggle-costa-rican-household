@@ -1,3 +1,6 @@
+import numpy as np
+import pandas as pd
+
 def data_cleaning(data):
     data['dependency']=np.sqrt(data['SQBdependency'])
     data['rez_esc']=data['rez_esc'].fillna(0)
